@@ -51,6 +51,7 @@ Pages site". Tell the website session which registrar you use and it will fill i
   - Plot Armor: Spoiler Blocker for Movies & TV: `https://plotarmor.gg/movies-tv/privacy/`
   - Plot Armor: Filter Out What You Don't Want: `https://plotarmor.gg/filter/privacy/`
   - Plot Armor: Sports Spoiler Blocker: `https://plotarmor.gg/sports/privacy/`
+  - Plot Armor: Gaming: `https://plotarmor.gg/games/privacy/`
 - Movies & TV is already in the store: developer dashboard → the item → **Privacy** tab →
   replace the privacy policy URL → **Save draft** → **Submit for review**. The old GitHub
   address keeps working, so nothing breaks in between.
