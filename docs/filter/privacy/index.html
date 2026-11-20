@@ -40,10 +40,17 @@
       <section>
         <h2>What Plot Armor Filter reads</h2>
         <p>
-          Plot Armor Filter only runs on x.com and twitter.com. On those pages it reads the posts on your screen
-          (their words, author name and @handle, link previews and photo descriptions, and whether X labels them as an ad),
-          the trending topics, and the name, @handle and bio shown on profile pages, hover cards and "Who to follow".
-          It uses them to decide whether to hide each one. This happens inside your browser, on your computer.
+          Plot Armor Filter only runs on x.com and twitter.com. On those pages it reads, on your screen:
+        </p>
+        <ul>
+          <li>posts: their words, author name and @handle, link previews, photo descriptions, the "Replying to @…" handles, the "From …" label on shared clips, and whether X labels them as an ad;</li>
+          <li>quoted posts: their words and author;</li>
+          <li>the trending topics and the "Today's News" headlines in the sidebar;</li>
+          <li>the name, @handle and bio shown on profile pages, hover cards and "Who to follow".</li>
+        </ul>
+        <p>
+          It uses them to decide whether to hide each one. To spot copy-paste replies, it compares the words of
+          posts on the same page, in memory only. All of this happens inside your browser, on your computer.
           Post text is never saved and never sent anywhere.
         </p>
       </section>
@@ -52,23 +59,35 @@
         <h2>What Plot Armor Filter saves, and where</h2>
         <p>Everything is saved in your browser's own storage on your computer:</p>
         <ul>
-          <li>which categories you switched on, and your settings (how covers look, the "Where accounts are based" options and the places you chose to hide);</li>
+          <li>which categories you switched on, whether first-run setup was finished, and your settings (how covers look, the "Where accounts are based" options and the places you chose to hide);</li>
           <li>the @handles of accounts whose bio or name showed they belong to a category you hide, so their posts are hidden everywhere, kept for 30 days after they were last seen;</li>
-          <li>if you switched on account lookups: X's answer for each account looked up (where it is based and when it was made), kept for 30 days, and how many lookups were made recently, so it can stay within its limit;</li>
-          <li>how many posts it hid, by category and by day (just the numbers, never which posts), shown in the popup.</li>
+          <li>if you switched on account lookups, X's answer for each account looked up, kept for 30 days: where the account is based, whether X says that location is accurate, how it is "Connected via" (for example "East Asia App Store"), when the account was made, and how many times its @handle has changed. An account X has no answer for is remembered as "no answer" for 30 days too, so it isn't asked about again;</li>
+          <li>how many lookups were made recently, and, if lookups are paused, until when and why (for example "X asked us to slow down"), so it stays within its limit;</li>
+          <li>how many posts it hid, by category and by day, and the weekly total (just the numbers, never which posts), shown in the popup.</li>
         </ul>
-        <p>There is no Plot Armor account, no sign-in to us and no Plot Armor server. Removing the extension deletes all of it.</p>
+        <p>None of this includes text from posts. There is no Plot Armor account, no sign-in to us and no Plot Armor server. Removing the extension deletes all of it.</p>
       </section>
 
       <section>
         <h2>Account lookups to X (optional, off by default)</h2>
         <p>
           If you switch on "Where accounts are based", Plot Armor Filter asks X for the "About this account"
-          details of accounts on your screen. It uses the same request X's own website makes when you open that
-          page, sent from your browser on x.com while you are signed in to X, so X sees it as coming from you.
+          details of accounts on your screen or that you recently scrolled past (those on screen first).
+          It uses the same request X's own website makes when you open that page, sent from your browser on
+          x.com (never twitter.com) while you are signed in to X, so X sees it as coming from you.
+        </p>
+        <p>
+          To make that request, it reuses your existing X sign-in, including X's security token cookie, only to
+          send that one request to X, exactly as X's own page does. It never saves that token or sends it anywhere else.
+        </p>
+        <p>
           Each request names one account's @handle and nothing else: never your posts, the posts you read or your
           settings. It looks up at most 40 accounts every 15 minutes and pauses if X asks it to slow down.
-          To do this, it also reads X's own public website code to find how that request is made.
+        </p>
+        <p>
+          To find the lookup's current address, it downloads X's public script files from abs.twimg.com (X's file
+          server) and reads the list of requests X's page has already made. Nothing about you is sent with these downloads
+          beyond what any visit to X sends.
         </p>
         <p>X's handling of these requests is covered by <a href="https://x.com/en/privacy">X's privacy policy</a>. Switch the option off and no lookups are made.</p>
         <p>Apart from this, Plot Armor Filter makes no connection to the internet. Its word lists are built into the extension and are updated only when the extension itself updates through the Chrome Web Store.</p>
@@ -77,9 +96,9 @@
       <section>
         <h2>What Plot Armor Filter does not do</h2>
         <ul>
-          <li>No analytics, tracking, advertising or cookies.</li>
+          <li>No analytics, tracking or advertising. It sets no cookies of its own.</li>
           <li>No selling or sharing of data, and no use of data for anything except hiding what you chose not to see.</li>
-          <li>No reading of other websites, your messages, or your X account details.</li>
+          <li>No reading of other websites, or of your X messages, password or account settings.</li>
           <li>No posting, liking, following, blocking or anything else on X on your behalf.</li>
         </ul>
       </section>
