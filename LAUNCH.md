@@ -1,6 +1,6 @@
 # Launching plotarmor.gg
 
-The site is built and checked locally. Nothing is published yet. The steps below happen in this
+**Live at https://plotarmor.gg since 2026-11-19** (HTTPS on, www redirects). Parts A and B are done; the steps below are kept for reference. They happened in this
 order, and each needs Selly's yes in the website session's chat.
 
 ## A. Put the site on GitHub (done 2026-11-19)
