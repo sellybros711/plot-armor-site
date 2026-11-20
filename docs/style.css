@@ -29,12 +29,12 @@
 .p-movies { --product: #148a50; --product-ink: #fff; --band-1: #0f2219; --band-2: #1d4a33; --band-muted: #b9e9cf; }
 .p-filter { --product: #c42b2b; --product-ink: #fff; --band-1: #2a0b0f; --band-2: #5a1a20; --band-muted: #f4c4c4; }
 .p-sports { --product: #1a6fc0; --product-ink: #fff; --band-1: #0b1d36; --band-2: #17406f; --band-muted: #c3dcf6; }
-.p-games  { --product: #5d6570; --product-ink: #fff; --band-1: #16181c; --band-2: #353a42; --band-muted: #d0d4da; }
+.p-games  { --product: #6d3fd9; --product-ink: #fff; --band-1: #1a0f33; --band-2: #3b2370; --band-muted: #ddd0fb; }
 @media (prefers-color-scheme: dark) {
   .p-movies { --product: #2df595; --product-ink: #0b2216; }
   .p-filter { --product: #f67070; --product-ink: #2a0b0f; }
   .p-sports { --product: #62b6f7; --product-ink: #0b1d36; }
-  .p-games  { --product: #aab1bb; --product-ink: #16181c; }
+  .p-games  { --product: #ac80fa; --product-ink: #1a0f33; }
 }
 
 * { box-sizing: border-box; }
