@@ -143,7 +143,7 @@ Pro tier or payments, accounts, a blog, newsletters run by us, analytics, transl
 2. **Store status.** The task says only Movies & TV is in the store. The Sports listing notes say
    Movies & TV and Filter use the two slots. Is Filter submitted (even Unlisted)? If so, I'll show
    "Add to Chrome" for it once there's a link.
-3. **Contact email.** The current privacy policy lists RunTheGames@outlook.com. OK to show it on
+3. **Contact email.** The current privacy policy lists PlotArmorGG@outlook.com. OK to show it on
    the support page and in all policies, or do you want a new one (for example
    hello@plotarmor.gg, which needs email forwarding set up at your registrar)?
 4. **Coming soon sign-up.** Google Form "Tell me when it's out" (I write the script, you run
@@ -152,7 +152,7 @@ Pro tier or payments, accounts, a blog, newsletters run by us, analytics, transl
 ## Built 2026-11-19 (Selly said yes; the four questions weren't answered, so these defaults were used)
 1. Filter is shown as **"Plot Armor: Filter Out What You Don't Want"**, the name in the extension itself.
 2. Filter, Sports and Games show "Coming soon" / "Being built" (no store links yet).
-3. Contact email: RunTheGames@outlook.com, already public in the live privacy policies.
+3. Contact email: PlotArmorGG@outlook.com, already public in the live privacy policies.
 4. No sign-up form; cards just say "Coming soon".
 Also: the Sports policy linked to `sellybros711.github.io/plot-armor-sports-data/`, which shows
 a 404, so the moved copy shows that address as plain text. Words are otherwise unchanged.
