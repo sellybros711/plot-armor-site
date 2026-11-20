@@ -3,7 +3,7 @@
 The site is built and checked locally. Nothing is published yet. The steps below happen in this
 order, and each needs Selly's yes in the website session's chat.
 
-## A. Put the site on GitHub (the website session does this after your yes)
+## A. Put the site on GitHub (done 2026-11-19)
 1. Create a **public** repo `sellybros711/plot-armor-site` and push `main`.
    (Free GitHub Pages needs a public repo. Everything in it is meant to be public anyway.)
 2. Repo → **Settings** → **Pages** → Source: **Deploy from a branch** → Branch **main**,
@@ -34,6 +34,13 @@ order, and each needs Selly's yes in the website session's chat.
     this can take up to 24 hours).
 11. Open https://plotarmor.gg and https://www.plotarmor.gg on your phone. Both should show the
     site with a padlock.
+
+**Your registrar is GoDaddy.** In steps 2 to 8: godaddy.com → sign in → your name (top right) →
+**My Products** → next to plotarmor.gg click **DNS** (or **Manage DNS**). Records are under the
+**DNS Records** tab: **Add New Record** adds one; the pencil icon edits one; the trash icon deletes one.
+GoDaddy usually starts with an **A** record for `@` pointing to "Parked" and a **CNAME** for `www`
+pointing to `@`: delete the parked A record and edit the `www` CNAME to `sellybros711.github.io`.
+Leave the **NS** and **SOA** records alone.
 
 If a menu name differs, GitHub's own help page is "Managing a custom domain for your GitHub
 Pages site". Tell the website session which registrar you use and it will fill in exact names.
