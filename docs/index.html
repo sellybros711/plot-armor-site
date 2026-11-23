@@ -3,21 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plot Armor: Chrome extensions that protect your X feed</title>
-<meta name="description" content="Plot Armor makes Chrome extensions that cover spoilers and filter out what you don't want on X. No account, no Plot Armor server. What you read stays on your computer.">
+<title>Plot Armor: Free Spoiler Blockers for X (Twitter) | Chrome Extensions</title>
+<meta name="description" content="Plot Armor makes free Chrome extensions that cover video game, TV and movie spoilers on X (Twitter). No account, no Plot Armor server. Sports and a gambling and spam filter are coming soon.">
 <link rel="canonical" href="https://plotarmor.gg/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Plot Armor">
-<meta property="og:title" content="Plot Armor: Chrome extensions that protect your X feed">
-<meta property="og:description" content="Cover spoilers and filter out what you don't want on X. What you read stays on your computer.">
+<meta property="og:title" content="Plot Armor: Scroll X. Skip the spoilers.">
+<meta property="og:description" content="Free Chrome extensions that cover game, TV and movie spoilers on X (Twitter). What you read stays on your computer.">
 <meta property="og:url" content="https://plotarmor.gg/">
 <meta property="og:image" content="https://plotarmor.gg/img/movies-tv-share.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0b12">
 <link rel="icon" href="/img/movies-tv-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/home.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://plotarmor.gg/#org","name":"Plot Armor","url":"https://plotarmor.gg/","logo":"https://plotarmor.gg/img/movies-tv-256.png"},
+{"@type":"WebSite","name":"Plot Armor","url":"https://plotarmor.gg/","publisher":{"@id":"https://plotarmor.gg/#org"}},
+{"@type":"SoftwareApplication","name":"Plot Armor: Gaming","url":"https://plotarmor.gg/games/","applicationCategory":"BrowserApplication","operatingSystem":"Chrome","description":"Covers video-game story spoilers on X until you've finished the game.","image":"https://plotarmor.gg/img/games-256.png","installUrl":"https://chromewebstore.google.com/detail/nebblcibghclhigenoenicnlakeilkij","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://plotarmor.gg/#org"}},
+{"@type":"SoftwareApplication","name":"Plot Armor: Spoiler Blocker for Movies & TV","url":"https://plotarmor.gg/movies-tv/","applicationCategory":"BrowserApplication","operatingSystem":"Chrome","description":"Covers spoilers on X for the shows, movies and wrestling you haven't seen yet.","image":"https://plotarmor.gg/img/movies-tv-256.png","installUrl":"https://chromewebstore.google.com/detail/liidafcnfgmcemdeaaddafoenfbilbke","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://plotarmor.gg/#org"}}
+]}
+</script>
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <div class="wrap">
@@ -27,41 +37,55 @@
 </header>
 
 <div class="hero">
-  <div class="wrap">
-    <div class="shields" aria-hidden="true">
-      <img src="/img/games-256.png" alt="" width="52" height="52">
-      <img src="/img/movies-tv-256.png" alt="" width="52" height="52">
-      <img src="/img/filter-256.png" alt="" width="52" height="52">
-      <img src="/img/sports-256.png" alt="" width="52" height="52">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="label">Free Chrome extensions for X (Twitter)</p>
+      <h1>Scroll X. Skip the <mark>spoilers.</mark></h1>
+      <p class="sub">Plot Armor covers posts about the games you're playing and the shows you're behind on, until you've caught up.</p>
+      <div class="actions">
+        <a class="btn" href="https://chromewebstore.google.com/detail/nebblcibghclhigenoenicnlakeilkij"><img src="/img/games-256.png" alt="" width="24" height="24">Get Gaming</a>
+        <a class="btn alt" href="https://chromewebstore.google.com/detail/liidafcnfgmcemdeaaddafoenfbilbke"><img src="/img/movies-tv-256.png" alt="" width="24" height="24">Get Movies &amp; TV</a>
+      </div>
+      <p class="promise">No account. No Plot Armor server. What you read on X stays on your computer.</p>
     </div>
-    <h1>Armor for your X feed.</h1>
-    <p>Plot Armor makes small Chrome extensions that cover spoilers and filter out what you don't want to see on X.</p>
-    <p>No account. No Plot Armor server. What you read on X stays on your computer.</p>
-    <div class="actions"><a class="btn" href="#products">See the extensions</a></div>
+    <div class="feed" role="img" aria-label="Illustration: a post about Grand Theft Auto VI on X, covered by Plot Armor with a Possible spoiler label and a Show anyway button.">
+      <div class="post extra"><svg class="av" viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="19" fill="#f2a33a"/></svg><div><div class="who">Dani <span>· 2m</span></div><p>Home early. Controller charged. Do not text me tonight.</p></div></div>
+      <div class="post"><svg class="av" viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="19" fill="#3aa0f2"/></svg><div><div class="who">Marcus <span>· 9m</span></div>
+        <div class="cover"><img src="/img/games-256.png" alt="" width="30" height="30"><div><b>Possible spoiler</b><small>Grand Theft Auto VI</small></div><span class="show">Show anyway</span></div></div></div>
+      <div class="post extra"><svg class="av" viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="19" fill="#e0527c"/></svg><div><div class="who">Priya <span>· 14m</span></div><p>Anyone else's cat scream at 5am or just mine</p></div></div>
+    </div>
   </div>
 </div>
 
+<div class="facts"><div class="wrap"><ul>
+  <li>Free</li><li>No account</li><li>No tracking or ads</li><li>Runs in your browser</li>
+</ul></div></div>
+
 <main id="main" class="wrap">
   <section id="products" aria-labelledby="products-h">
-    <h2 id="products-h">The extensions</h2>
-    <div class="grid two">
+    <h2 id="products-h">Pick your armor</h2>
+    <p class="lede">Each extension does one job. Add the ones you need.</p>
+    <div class="tiles">
 
-      <article class="card product-card p-games">
+      <article class="tile live games">
         <header>
-          <img src="/img/games-256.png" alt="" width="64" height="64">
-          <h3><a href="/games/">Plot Armor: Gaming</a></h3>
+          <img src="/img/games-256.png" alt="" width="84" height="84">
+          <div><span class="label">In the Chrome Web Store</span>
+          <h3><a href="/games/">Plot Armor: Gaming</a></h3></div>
         </header>
-        <p>Covers video-game story spoilers on X until you've finished the game: GTA 6, Red Dead Redemption 2, Cyberpunk 2077 and more.</p>
+        <p>Covers video-game story spoilers on X until you've finished the game: endings, boss fights, leaks and trailers.</p>
+        <ul class="chips" aria-label="Some of the games covered"><li>GTA 6</li><li>Marvel's Wolverine</li><li>Red Dead Redemption 2</li><li>Cyberpunk 2077</li><li>and more</li></ul>
         <div class="row">
           <a class="btn" href="https://chromewebstore.google.com/detail/nebblcibghclhigenoenicnlakeilkij">Add to Chrome</a>
           <a class="more" href="/games/">How it works</a>
         </div>
       </article>
 
-      <article class="card product-card p-movies">
+      <article class="tile live movies">
         <header>
-          <img src="/img/movies-tv-256.png" alt="" width="64" height="64">
-          <h3><a href="/movies-tv/">Plot Armor: Spoiler Blocker for Movies &amp; TV</a></h3>
+          <img src="/img/movies-tv-256.png" alt="" width="84" height="84">
+          <div><span class="label">In the Chrome Web Store</span>
+          <h3><a href="/movies-tv/">Plot Armor: Spoiler Blocker for Movies &amp; TV</a></h3></div>
         </header>
         <p>Covers spoilers on X for the shows, movies and wrestling you haven't seen yet. Mark it watched and the covers lift.</p>
         <div class="row">
@@ -70,44 +94,80 @@
         </div>
       </article>
 
-      <article class="card product-card p-filter">
+      <article class="tile soon-tile p-filter">
         <header>
           <img src="/img/filter-256.png" alt="" width="64" height="64">
-          <h3><a href="/filter/">Plot Armor: Filter Out What You Don't Want</a></h3>
+          <div><span class="label">Coming soon</span>
+          <h3><a href="/filter/">Plot Armor: Filter Out What You Don't Want</a></h3></div>
         </header>
         <p>Hides gambling, crypto spam, scams and ads on X: sportsbooks, betting tips, coin shilling and bot spam.</p>
         <div class="row">
           <a class="btn" href="mailto:PlotArmorGG@outlook.com?subject=Notify%20me%3A%20Plot%20Armor%3A%20Filter%20Out%20What%20You%20Don%27t%20Want&amp;body=Hi%21%20Please%20email%20me%20when%20Plot%20Armor%3A%20Filter%20Out%20What%20You%20Don%27t%20Want%20is%20in%20the%20Chrome%20Web%20Store.">Notify me</a>
           <a class="more" href="/filter/">Learn more</a>
-          <span class="soon">Coming soon</span>
         </div>
       </article>
 
-      <article class="card product-card p-sports">
+      <article class="tile soon-tile p-sports">
         <header>
           <img src="/img/sports-256.png" alt="" width="64" height="64">
-          <h3><a href="/sports/">Plot Armor: Sports Spoiler Blocker</a></h3>
+          <div><span class="label">Coming soon</span>
+          <h3><a href="/sports/">Plot Armor: Sports Spoiler Blocker</a></h3></div>
         </header>
         <p>Pick the games you'll watch later. Their results stay covered on X until you've seen them. Everything else stays visible.</p>
         <div class="row">
           <a class="btn" href="mailto:PlotArmorGG@outlook.com?subject=Notify%20me%3A%20Plot%20Armor%3A%20Sports%20Spoiler%20Blocker&amp;body=Hi%21%20Please%20email%20me%20when%20Plot%20Armor%3A%20Sports%20Spoiler%20Blocker%20is%20in%20the%20Chrome%20Web%20Store.">Notify me</a>
           <a class="more" href="/sports/">Learn more</a>
-          <span class="soon">Coming soon</span>
         </div>
       </article>
 
     </div>
   </section>
 
-  <section class="card private" aria-labelledby="private-h">
-    <h2 id="private-h">Private by design</h2>
+  <section aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <p class="lede">Three steps, then forget it's there.</p>
+    <ol class="how">
+      <li><h3>Add it to Chrome</h3><p>Each extension is free in the Chrome Web Store. There's nothing to sign up for.</p></li>
+      <li><h3>Say what to protect</h3><p>Pick the games you're playing or the shows you're behind on.</p></li>
+      <li><h3>Scroll like normal</h3><p>Posts about them get covered. Finished the game or watched the episode? Mark it done and the covers lift.</p></li>
+    </ol>
+  </section>
+
+  <section class="vault" aria-labelledby="private-h">
+    <p class="label">Private by design</p>
+    <h2 id="private-h">Your feed is none of our business.</h2>
+    <div class="zeros">
+      <div><b>0</b><span>accounts to make</span></div>
+      <div><b>0</b><span>Plot Armor servers</span></div>
+      <div><b>0</b><span>trackers or ads</span></div>
+    </div>
     <ul class="ticks">
-      <li>No account and no sign-in. There is no Plot Armor server.</li>
       <li>Every extension decides what to cover inside your browser. What you read on X is never sent to us.</li>
       <li>No analytics, tracking or ads, and no cookies of our own, in the extensions or on this website.</li>
       <li>Removing an extension deletes everything it saved.</li>
     </ul>
-    <p class="muted small">Some extensions download public lists (show dates, game schedules) so they know what to cover. Each privacy policy says exactly what each one downloads or asks for.</p>
+    <p class="small">Some extensions download public lists (show dates, game schedules) so they know what to cover. Each privacy policy says exactly what each one downloads or asks for: <a href="/games/privacy/">Gaming</a>, <a href="/movies-tv/privacy/">Movies &amp; TV</a>, <a href="/filter/privacy/">Filter</a>, <a href="/sports/privacy/">Sports</a>.</p>
+  </section>
+
+  <section aria-labelledby="faq-h">
+    <h2 id="faq-h">Questions</h2>
+    <p class="lede">More help is on the <a href="/support/">support page</a>.</p>
+    <div class="faq">
+      <details><summary>How do I block spoilers on X (Twitter)?</summary><p>Add a Plot Armor extension to Chrome, pick the game or show you want protected, and keep scrolling. Posts about it are covered until you say you've caught up.</p></details>
+      <details><summary>Does it work on Twitter?</summary><p>Yes. X is the new name for Twitter. Plot Armor works on x.com in Chrome on a computer.</p></details>
+      <details><summary>Is Plot Armor free?</summary><p>Yes. Plot Armor: Gaming and Plot Armor: Spoiler Blocker for Movies &amp; TV are free in the Chrome Web Store.</p></details>
+      <details><summary>Can Plot Armor see what I read?</summary><p>No. Each extension decides what to cover inside your browser. There's no account and no Plot Armor server, so what you read on X is never sent to us.</p></details>
+      <details><summary>When are Filter and Sports coming?</summary><p>They're being built. Press Notify me on either one and we'll email you when it's in the Chrome Web Store.</p></details>
+      <details><summary>How do I remove an extension?</summary><p>Right-click its icon in Chrome and choose Remove from Chrome. Removing it deletes everything it saved.</p></details>
+    </div>
+  </section>
+
+  <section class="last" aria-labelledby="last-h">
+    <h2 id="last-h">See the ending for yourself.</h2>
+    <div class="actions">
+      <a class="btn g" href="https://chromewebstore.google.com/detail/nebblcibghclhigenoenicnlakeilkij">Add Gaming to Chrome</a>
+      <a class="btn m" href="https://chromewebstore.google.com/detail/liidafcnfgmcemdeaaddafoenfbilbke">Add Movies &amp; TV to Chrome</a>
+    </div>
   </section>
 </main>
 

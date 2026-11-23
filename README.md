@@ -4,7 +4,7 @@ The website for the Plot Armor family of Chrome extensions. Plain HTML and one C
 build step, no frameworks, no cookies, no analytics and no outside fonts or scripts.
 
 - `docs/`: the whole site, exactly as served (GitHub Pages serves this folder).
-  Each page is `docs/<page>/index.html`; shared styles are in `docs/style.css`.
+  Each page is `docs/<page>/index.html`; shared styles are in `docs/style.css`; the front page also uses `docs/home.css`.
 - `tools/check_links.py`: checks every link and image. `--online` also opens outside links.
 - `PLAN.md`: the approved plan. `LAUNCH.md`: publishing steps and the privacy URLs for the store.
 
