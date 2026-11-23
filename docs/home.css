@@ -122,3 +122,15 @@
   .feature .shot { position: absolute; right: 24px; top: 26px; margin: 0; width: 160px; }
 }
 @media (min-width: 800px) and (max-width: 939px) { .pair { grid-template-columns: 1fr; } }
+
+/* Each panel takes a pale tint of its own shield color */
+.pair .feature:nth-child(1) { background: #efe9fd; }
+.pair .feature:nth-child(2) { background: #e2f6ea; }
+.next .soon-card:nth-child(1) { background: #fdebeb; }
+.next .soon-card:nth-child(2) { background: #e6f1fc; }
+@media (prefers-color-scheme: dark) {
+  .pair .feature:nth-child(1) { background: #1e1736; }
+  .pair .feature:nth-child(2) { background: #10261b; }
+  .next .soon-card:nth-child(1) { background: #2b1517; }
+  .next .soon-card:nth-child(2) { background: #112031; }
+}
