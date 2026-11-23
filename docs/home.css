@@ -75,3 +75,50 @@
 .home details p { color: var(--muted); margin: 8px 0 0; }
 .home main { padding: 0 0 80px; }
 .home .site-foot { font-size: 13px; }
+
+/* Compact layout: less scrolling */
+.top { padding: 32px 0 26px; }
+.top h1 { font-size: clamp(30px, 4.6vw, 46px); margin-bottom: 10px; }
+.top p { font-size: clamp(16px, 1.8vw, 19px); }
+.pair, .next { gap: 16px; }
+.next { margin-top: 16px; }
+.feature { flex-direction: row; align-items: stretch; text-align: left; padding: 0; height: 250px; border-radius: 20px; }
+.feature .txt { padding: 24px 0 22px 26px; flex: 1; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.feature .txt > img { width: 44px; height: 44px; margin-bottom: 10px; }
+.feature h2 { font-size: 21px; margin-bottom: 6px; }
+.feature p { font-size: 15.5px; line-height: 1.45; margin-bottom: 0; }
+.feature .row { justify-content: flex-start; margin: auto 0 0; padding-top: 12px; }
+.feature .shot { flex: none; width: 170px; height: auto; align-self: flex-start; margin: 26px 22px 0 18px; border-radius: 10px; object-fit: fill; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 12px 30px rgba(0, 0, 0, 0.14); }
+.home .btn { min-height: 40px; padding: 7px 18px; font-size: 15px; }
+.soon-card { padding: 18px 22px; border-radius: 20px; grid-template-columns: 40px 1fr; }
+.soon-card > img { width: 40px; height: 40px; }
+.soon-card h2 { font-size: 17px; margin-bottom: 2px; }
+.soon-card p { font-size: 15px; margin-bottom: 10px; }
+.soon-card .tag { font-size: 12px; }
+.soon-card .btn { min-height: 34px; padding: 5px 14px; font-size: 14px; }
+.band { padding: 44px 0 0; }
+.band > h2 { font-size: clamp(22px, 2.8vw, 28px); margin-bottom: 20px; }
+.three { gap: 16px; }
+@media (min-width: 800px) { .three { gap: 32px; } }
+.three h3 { font-size: 17px; margin-bottom: 2px; }
+.three p { font-size: 15px; }
+.band .note { font-size: 13px; margin-top: 20px; }
+.home details { padding: 12px 0; }
+.home main { padding-bottom: 44px; }
+.home .site-foot { padding: 20px 0 24px; }
+@media (max-width: 560px) {
+  .feature { height: auto; }
+  .feature .shot { display: none; }
+  .feature .txt { padding: 20px 22px; }
+  .feature .txt > img { position: absolute; }
+  .feature .txt { position: relative; }
+  .feature .txt > img { top: 20px; left: 22px; width: 40px; height: 40px; }
+  .feature h2 { padding-left: 54px; min-height: 40px; display: flex; align-items: center; margin-bottom: 8px; }
+  .top { padding: 24px 0 20px; }
+}
+@media (min-width: 561px) {
+  .feature { height: auto; min-height: 250px; position: relative; }
+  .feature .txt { padding-right: 200px; }
+  .feature .shot { position: absolute; right: 24px; top: 26px; margin: 0; width: 160px; }
+}
+@media (min-width: 800px) and (max-width: 939px) { .pair { grid-template-columns: 1fr; } }
