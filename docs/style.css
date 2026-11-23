@@ -145,3 +145,62 @@ details p { margin: 10px 0 2px; }
 
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .hero .actions + p { margin-top: 14px; font-size: 15px; }
+
+/* ---- Clean look for every page except the front page (which uses home.css) ---- */
+body:not(.home) {
+  --bg: #ffffff; --text: #1d1d1f; --muted: #6e6e73; --card: #f5f5f7; --line: #e3e3e8;
+  --link: #5a36e0; --btn: #1d1d1f; --btn-ink: #ffffff; --tint: #f1eefc; --accent: #5a36e0;
+}
+body.p-games  { --tint: #efe9fd; }
+body.p-movies { --tint: #e2f6ea; }
+body.p-filter { --tint: #fdebeb; }
+body.p-sports { --tint: #e6f1fc; }
+@media (prefers-color-scheme: dark) {
+  body:not(.home) { --bg: #0b0b0d; --text: #f5f5f7; --muted: #a1a1a6; --card: #18181b; --line: #2a2a2f; --link: #a995ff; --btn: #f5f5f7; --btn-ink: #0b0b0d; --tint: #1a1730; --accent: #a995ff; }
+  body.p-games  { --tint: #1e1736; }
+  body.p-movies { --tint: #10261b; }
+  body.p-filter { --tint: #2b1517; }
+  body.p-sports { --tint: #112031; }
+}
+body:not(.home) .wrap { padding: 0 20px; }
+body:not(.home) a { color: var(--link); }
+body:not(.home) h1, body:not(.home) h2, body:not(.home) h3 { letter-spacing: -0.022em; }
+
+body:not(.home) .site-head { background: var(--bg); color: var(--text); border-bottom: 1px solid var(--line); }
+body:not(.home) .site-head .wrap { min-height: 48px; }
+body:not(.home) .brand { color: var(--text); font-size: 16px; font-weight: 600; gap: 8px; }
+body:not(.home) .brand img { width: 22px; height: 22px; }
+body:not(.home) .site-head nav a { color: var(--muted); font-size: 14px; font-weight: 400; }
+body:not(.home) .site-head nav a:hover, body:not(.home) .site-head nav a[aria-current] { color: var(--text); }
+
+body:not(.home) .hero { background: var(--tint); color: var(--text); padding: 36px 0 38px; }
+body:not(.home) .hero h1 { font-size: clamp(28px, 4.4vw, 42px); letter-spacing: -0.03em; margin-bottom: 10px; }
+body:not(.home) .hero p { color: var(--muted); font-size: clamp(16px, 1.9vw, 19px); line-height: 1.45; }
+body:not(.home) .hero .kicker { text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 400; color: var(--muted); margin-bottom: 6px; }
+body:not(.home) .product-hero > img { width: 96px; height: 96px; }
+body:not(.home) .actions { margin-top: 18px; }
+
+body:not(.home) .btn, body:not(.home) .hero .btn { background: var(--btn); color: var(--btn-ink); min-height: 42px; padding: 7px 20px; font-weight: 600; font-size: 16px; border: 0; }
+body:not(.home) .btn.ghost, body:not(.home) .hero .btn.ghost { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1px var(--muted); }
+body:not(.home) .soon, body:not(.home) .hero .soon { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--line); font-weight: 600; font-size: 14px; }
+
+body:not(.home) main { padding: 0 0 48px; }
+body:not(.home) section { margin: 36px 0; }
+body:not(.home) h2 { font-size: clamp(21px, 2.6vw, 26px); font-weight: 700; }
+body:not(.home) h3 { font-size: 17px; }
+body:not(.home) .card { background: var(--card); border: 0; border-radius: 20px; padding: 24px 26px; }
+body:not(.home) .private { border-left: 0; }
+body:not(.home) .steps li { background: var(--tint); border: 0; border-radius: 20px; padding: 20px 22px; color: var(--muted); }
+body:not(.home) .steps li h3 { color: var(--text); }
+body:not(.home) .steps li::before { background: var(--btn); color: var(--btn-ink); width: 28px; height: 28px; font-size: 15px; }
+body:not(.home) .ticks li::before { color: var(--text); }
+body:not(.home) .more { color: var(--link); font-weight: 400; }
+body:not(.home) .shot { border-radius: 20px; }
+
+body:not(.home) .policy section { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0 0 18px; margin: 22px 0; }
+body:not(.home) .policy section:last-child { border-bottom: 0; }
+body:not(.home) .policy h2 { font-size: 19px; }
+body:not(.home) details { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; margin: 0; padding: 14px 0; }
+body:not(.home) summary { font-weight: 600; }
+body:not(.home) details p { color: var(--muted); }
+body:not(.home) .site-foot { font-size: 13px; padding: 20px 0 24px; }
