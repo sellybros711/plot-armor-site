@@ -134,3 +134,12 @@
   .next .soon-card:nth-child(1) { background: #2b1517; }
   .next .soon-card:nth-child(2) { background: #112031; }
 }
+
+/* "Coming soon" as a solid badge in the shield's color */
+.soon-card .tag { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: 0.02em; color: #fff; padding: 3px 11px; border-radius: 999px; margin: 0 0 8px; }
+.next .soon-card:nth-child(1) .tag { background: #c42b2b; }
+.next .soon-card:nth-child(2) .tag { background: #1a6fc0; }
+@media (prefers-color-scheme: dark) {
+  .next .soon-card:nth-child(1) .tag { background: #f67070; color: #2a0b0f; }
+  .next .soon-card:nth-child(2) .tag { background: #62b6f7; color: #0b1d36; }
+}
