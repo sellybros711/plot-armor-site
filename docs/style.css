@@ -206,3 +206,12 @@ body:not(.home) details p { color: var(--muted); }
 body:not(.home) .site-foot { font-size: 13px; padding: 20px 0 24px; }
 body:not(.home) .card .actions { margin-top: 14px; gap: 10px; }
 body:not(.home) .card .actions + p { margin: 12px 0 0; }
+
+/* Footer: quiet, labelled rows (every page) */
+.site-foot { border-top: 1px solid var(--line); margin-top: 8px; }
+.site-foot .cols { gap: 4px 22px; margin-bottom: 6px; align-items: baseline; }
+.site-foot .foot-h { width: 84px; flex: none; color: var(--text); font-weight: 600; }
+.site-foot a, body:not(.home) .site-foot a { color: var(--muted); text-decoration: none; }
+.site-foot a:hover { color: var(--text); text-decoration: underline; }
+.site-foot .legal { margin: 14px 0 0; }
+@media (max-width: 560px) { .site-foot .cols { gap: 4px 13px; } .site-foot .foot-h { width: 68px; } }
