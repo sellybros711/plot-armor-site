@@ -204,3 +204,5 @@ body:not(.home) details { background: none; border: 0; border-bottom: 1px solid 
 body:not(.home) summary { font-weight: 600; }
 body:not(.home) details p { color: var(--muted); }
 body:not(.home) .site-foot { font-size: 13px; padding: 20px 0 24px; }
+body:not(.home) .card .actions { margin-top: 14px; gap: 10px; }
+body:not(.home) .card .actions + p { margin: 12px 0 0; }
