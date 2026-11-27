@@ -196,3 +196,21 @@
   .feature .tag + h2 { min-height: 0; }
   .feature .row { margin-top: 12px; padding-top: 0; }
 }
+
+/* Button and its link sit side by side on one line, in every panel */
+.feature .row { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
+.pair .feature:nth-child(3) { background: #fce3e3; }
+@media (prefers-color-scheme: dark) { .pair .feature:nth-child(3) { background: #2b1517; } }
+@media (min-width: 561px) {
+  /* the button line runs the full width of the panel, under the picture */
+  .feature .row, .feature .also { margin-right: -200px; position: relative; z-index: 1; }
+  .feature .row { flex-wrap: nowrap; }
+  .feature .shot { height: calc(100% - 26px - 104px); object-fit: cover; object-position: top; }
+  .feature .txt { min-height: 290px; }
+}
+@media (min-width: 561px) { .feature .txt > .row:last-child { margin-bottom: 25px; } }
+@media (max-width: 560px) {
+  .feature .row { gap: 8px 12px; flex-wrap: nowrap; }
+  .feature .btn { padding: 7px 14px; white-space: nowrap; }
+  .feature .more { white-space: nowrap; }
+}
