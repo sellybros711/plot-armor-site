@@ -243,3 +243,15 @@
   .feature .btn { padding: 7px 12px; }
   .pill { padding: 7px 10px; font-size: 14px; gap: 6px; }
 }
+
+/* Knight icons (Nov 27): Movies & TV is gold, Filter is teal */
+.pair .feature:nth-child(2) { background: #fdf4d6; }
+.pair .feature:nth-child(3) { background: #dcf7f1; }
+.pair .feature:nth-child(2) .how { color: #8a6100; }
+.pair .feature:nth-child(3) .how { color: #0b7766; }
+@media (prefers-color-scheme: dark) {
+  .pair .feature:nth-child(2) { background: #2a2208; }
+  .pair .feature:nth-child(3) { background: #0c2723; }
+  .pair .feature:nth-child(2) .how { color: #ffd34d; }
+  .pair .feature:nth-child(3) .how { color: #4fe8cc; }
+}
