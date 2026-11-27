@@ -167,3 +167,9 @@
 .questions details p { font-size: 15px; }
 .questions .more-help { font-size: 14px; color: var(--muted); margin: 14px 0 0; padding-top: 14px; border-top: 1px solid var(--line); }
 .home main { padding-bottom: 40px; }
+
+/* Store buttons: browser logo, and the "Coming soon on..." line under them */
+.home .btn .logo { width: 18px; height: 18px; }
+.also { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
+.soon-card p.also { margin: 8px 0 0; font-size: 13.5px; }
+.soon-card .row { min-height: 34px; }
