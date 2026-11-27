@@ -173,3 +173,26 @@
 .also { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
 .soon-card p.also { margin: 8px 0 0; font-size: 13.5px; }
 .soon-card .row { min-height: 34px; }
+
+/* Four matching panels: same size, same order (button, link, then the other store) */
+.feature .row { flex-direction: column; align-items: flex-start; gap: 8px; }
+.feature .also { margin: 4px 0 0; }
+.pair .feature:nth-child(3) { background: #fdebeb; }
+.pair .feature:nth-child(4) { background: #e6f1fc; }
+.feature .tag { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: 0.02em; color: #fff; padding: 3px 11px; border-radius: 999px; margin: 0; max-width: none; }
+.pair .feature:nth-child(3) .tag { background: #c42b2b; }
+.pair .feature:nth-child(4) .tag { background: #1a6fc0; }
+@media (prefers-color-scheme: dark) {
+  .pair .feature:nth-child(3) { background: #2b1517; }
+  .pair .feature:nth-child(4) { background: #112031; }
+  .pair .feature:nth-child(3) .tag { background: #f67070; color: #2a0b0f; }
+  .pair .feature:nth-child(4) .tag { background: #62b6f7; color: #0b1d36; }
+}
+@media (min-width: 561px) {
+  .feature .tag { position: absolute; left: 82px; top: 34px; }
+}
+@media (max-width: 560px) {
+  .feature .tag { margin: 0 0 4px 54px; }
+  .feature .tag + h2 { min-height: 0; }
+  .feature .row { margin-top: 12px; padding-top: 0; }
+}
